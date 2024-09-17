@@ -17,39 +17,78 @@
 </head>
 <body>
     <!-- Main navigation bar -->
-    <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img id="company-logo" src="../images/company-logo/logo.png" alt="TaskPro company logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_dashboard.html">Task Dashboard</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_details.html">Task Details</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_creation.html">Task Creation</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="register.html">Register</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="authentication.html">Authentication</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+    <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="index.html"><img id="company-logo" src="../images/company-logo/logo.png" alt="TaskPro company logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="task_dashboard.html">Task Dashboard</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="task_creation.html">Task Creation</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="register.html">Register</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="authentication.html">Authentication</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <main>
+      <!-- Heading -->
+      <div class="my-5 d-flex justify-content-center">
+        <h1 class="heading display-1">Create a Task</h1>
+      </div>
+      <!-- Form -->
+      <form class="mx-5 needs-validation" novalidate>
+        <div class="form-group form-floating mb-3">
+          <input type="text" class="form-control" id="InputTaskName1" aria-describedby="TaskNameHelp" placeholder="Task name" required>
+          <label for="InputTaskName1" class="text-muted">Enter the task name</label>
+          <div class="valid-feedback">Task name is valid!</div>
+          <div class="invalid-feedback">Please enter a valid task name.</div>
+        </div>
+        <div class="form-group form-floating mb-3">
+          <textarea id="InputDescription1" class="container-fluid form-control" placeholder="Description"></textarea>
+          <label for="InputDescripton1" class="text-muted">Enter task description (optional)</label>
+        </div>
+        <div class="form-group form-floating mb-3">
+          <input type="date" id="InputDate1" class="form-control text-muted">
+          <label for="InputDate1" class="text-muted">Enter a due date (optional)</label>
+        </div>
+        <button type="submit" class="btn btn-success container-fluid d-lg-none">Create Task</button>
+        <button type="submit" class="btn btn-success d-none d-lg-inline">Create Task</button>
+      </form>
+    </main>
 </body>
+<!-- JavaScript to disable form submission if input(s) are invalid -->
+<script>
+  (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
 </html>

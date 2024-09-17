@@ -17,39 +17,124 @@
 </head>
 <body>
     <!-- Main navigation bar -->
-    <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img id="company-logo" src="../images/company-logo/logo.png" alt="TaskPro company logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_dashboard.html">Task Dashboard</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_details.html">Task Details</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_creation.html">Task Creation</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="register.html">Register</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="authentication.html">Authentication</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary mb-5">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-4" href="index.html"><img id="company-logo" src="../images/company-logo/logo.png" alt="TaskPro company logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="task_dashboard.html">Task Dashboard</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="task_creation.html">Task Creation</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="register.html">Register</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="main-nav-link nav-link text-center" aria-current="page" href="authentication.html">Authentication</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Heading -->
+      <div class="my-5 d-flex justify-content-center">
+        <h1 class="heading display-1">My Tasks</h1>
+      </div>
+      <div class="divider"></div>
+      <!-- Cards showing each task - "Delete" hrefs intentionally left blank -->
+      <article class="container">
+        <div class="row g-0">
+          <div class="col-lg card mx-3 mb-5 shadow">
+            <img src="../images/for-task-details/red.png" class="card-img-top" alt="This image could not be loaded">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Task 1</h5>
+              <div class="d-flex">
+                <a class="text-decoration-none" href="task_details.html">View</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="edit_task.html">Edit</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="">Delete</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg card mx-3 mb-5 shadow">
+            <img src="../images/for-task-details/orange.png" class="card-img-top" alt="This image could not be loaded">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Task 2</h5>
+              <div class="d-flex">
+                <a class="text-decoration-none" href="task_details.html">View</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="edit_task.html">Edit</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="">Delete</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg card mx-3 mb-5 shadow">
+            <img src="../images/for-task-details/yellow.png" class="card-img-top" alt="This image could not be loaded">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Task 3</h5>
+              <div class="d-flex">
+                <a class="text-decoration-none" href="task_details.html">View</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="edit_task.html">Edit</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="">Delete</a>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+        <div class="row g-0">
+          <div class="col-lg card mx-3 mb-5 shadow">
+            <img src="../images/for-task-details/green.png" class="card-img-top" alt="This image could not be loaded">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Task 4</h5>
+              <div class="d-flex">
+                <a class="text-decoration-none" href="task_details.html">View</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="edit_task.html">Edit</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="">Delete</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg card mx-3 mb-5 shadow">
+            <img src="../images/for-task-details/blue.png" class="card-img-top" alt="This image could not be loaded">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Task 5</h5>
+              <div class="d-flex">
+                <a class="text-decoration-none" href="task_details.html">View</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="edit_task.html">Edit</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="">Delete</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg card mx-3 mb-5 shadow">
+            <img src="../images/for-task-details/purple.png" class="card-img-top" alt="This image could not be loaded">
+            <div class="card-body">
+              <h5 class="card-title mb-4">Task 6</h5>
+              <div class="d-flex">
+                <a class="text-decoration-none" href="task_details.html">View</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="edit_task.html">Edit</a>
+                <div class="divider"></div>
+                <a class="text-decoration-none" href="">Delete</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
 </body>
 </html>

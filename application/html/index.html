@@ -17,39 +17,74 @@
 </head>
 <body>
     <!-- Main navigation bar -->
-    <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="main-nav" class="navbar navbar-expand-lg bg-body-tertiary mb-5">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img id="company-logo" src="../images/company-logo/logo.png" alt="TaskPro company logo"></a>
+          <a class="navbar-brand mx-4" href="index.html"><img id="company-logo" src="../images/company-logo/logo.png" alt="TaskPro company logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="main-nav-link nav-link text-center" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_dashboard.html">Task Dashboard</a>
+                <a class="main-nav-link nav-link text-center" aria-current="page" href="task_dashboard.html">Task Dashboard</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_details.html">Task Details</a>
+                <a class="main-nav-link nav-link text-center" aria-current="page" href="task_creation.html">Task Creation</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="task_creation.html">Task Creation</a>
+                <a class="main-nav-link nav-link text-center" aria-current="page" href="register.html">Register</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="register.html">Register</a>
-              </li>
-              <li class="nav-item mx-4">
-                <a class="main-nav-link nav-link" aria-current="page" href="authentication.html">Authentication</a>
+                <a class="main-nav-link nav-link text-center" aria-current="page" href="authentication.html">Authentication</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
+      <main>
+        <!-- Jumbotron welcome message -->
+        <article class="mb-5 mx-5">
+          <div class="jumbotron-fluid">
+            <h1 class="display-4 mb-4">Welcome to the Task Management Application!</h1>
+            <p class="lead">Create, view, and manage tasks with ease!</p>
+            <hr class="my-4">
+            <p class="mb-5 mb-md-4">With the Task Management Application, users can easily plan important events on the program's easy-to-learn interface.</p>
+            <a class="btn btn-success btn-md container-fluid d-lg-none" href="register.html" role="button">Get started</a>
+            <a class="btn btn-success btn-md d-none d-lg-inline" href="register.html" role="button">Get started</a>
+          </div>
+        </article>
+        <!-- Cards showcasing main features - hrefs intentionally left blank -->
+        <article class="container">
+          <div class="row g-0">
+            <div class="col-lg card mx-3 mb-5 shadow">
+              <img src="../images/for-cards/coffee-and-calendar.jpg" class="card-img-top" alt="An image of coffee and a calendar">
+              <div class="card-body">
+                <h5 class="card-title">Create Tasks</h5>
+                <p class="card-text">Easily create tasks, including optional descriptions and due dates.</p>
+                <a href="#" class="text-decoration-none">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg card mx-3 mb-5 shadow">
+              <img src="../images/for-cards/desk-with-notebook.jpg" class="card-img-top" alt="An image of a desk and a notebook">
+              <div class="card-body">
+                <h5 class="card-title">Manage Tasks</h5>
+                <p class="card-text">Need to make changes to an existing task? Edit or discard existing tasks with the click of a mouse.</p>
+                <a href="#" class="text-decoration-none">Learn more</a>
+              </div>
+            </div>
+            <div class="col-lg card mx-3 mb-5 shadow">
+              <img src="../images/for-cards/sticky-notes.jpg" class="card-img-top" alt="An image of a hand and sticky notes">
+              <div class="card-body">
+                <h5 class="card-title">View Tasks</h5>
+                <p class="card-text">View tasks in a formatted manner, showing task name, description, and due date.</p>
+                <a href="#" class="text-decoration-none">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
 </body>
 </html>
